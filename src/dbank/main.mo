@@ -9,19 +9,9 @@ actor DBank {
   stable var currentValue: Float = 0;
 
   stable var startTime = Time.now();
-  Debug.print(debug_show(startTime));
-
-// "let" in Motoko language is a constant, so the value cannot be changed
-  let id = 23034245420;
-
-// Print output should only be text, otherwise you get a value error, unless we use "debug show"
-  Debug.print(debug_show(currentValue));
-  Debug.print(debug_show(id));
 
   public func deposit(amount: Float) {
     currentValue += amount;
-
-    Debug.print(debug_show(currentValue));
   };
 
   public func withdraw(amount: Float) {
@@ -30,7 +20,6 @@ actor DBank {
     let tempValue: Float = currentValue - amount;
     if (tempValue >= 0) {
       currentValue -= amount;
-      Debug.print(debug_show(currentValue));
     } else {
       Debug.print("Not enough funds.");
     }
