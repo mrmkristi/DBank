@@ -12,6 +12,10 @@ To learn more before you start working with dbank, see the following documentati
 - [Motoko Language Quick Reference](https://sdk.dfinity.org/docs/language-guide/language-manual.html)
 - [JavaScript API Reference](https://erxue-5aaaa-aaaab-qaagq-cai.raw.ic0.app)
 
+### Preview.
+
+![dbank](https://user-images.githubusercontent.com/114514562/217037120-e404edb4-dcbc-4e25-9df8-1436f8b90ac4.png)
+
 If you want to start working on your project right away, you might want to try the following commands:
 
 ```bash
